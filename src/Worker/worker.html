@@ -1,0 +1,40 @@
+<!--
+ * @Description: 
+ * @Author: 郭军伟
+ * @Date: 2020-03-06 14:06:32
+ * @lastEditTime: Do not edit
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worker</title>
+</head>
+
+<body>
+  <input type="text" id="a" />
+  <input type="text" id="b" />
+  <button id="btn">计算</button>
+  <script>
+    let a = document.getElementById('a');
+    let b = document.getElementById('b');
+    let btn = document.getElementById('btn');
+    if (window.Worker) {
+      let myWorker = new Worker('work.js');
+      console.log(myWorker)
+      btn.onClick = function () {
+        myWorker.postMessage([a.value, b.value]);
+        myWorker.onmessage = function (e) {
+          console.log('计算结果为:', e.data);
+        }
+      }
+    } else {
+      console.log('不支持worker')
+    }
+
+  </script>
+</body>
+
+</html>

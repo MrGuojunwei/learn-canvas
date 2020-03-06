@@ -1,0 +1,23 @@
+{
+  "name": "learn-canvas",
+  "version": "1.0.0",
+  "description": "canvas的学习历程",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGuojunwei/learn-canvas.git"
+  },
+  "keywords": [
+    "canvas",
+    "学习"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrGuojunwei/learn-canvas/issues"
+  },
+  "homepage": "https://github.com/MrGuojunwei/learn-canvas#readme"
+}

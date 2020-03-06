@@ -1,0 +1,32 @@
+<!--
+ * @Description: 
+ * @Author: 郭军伟
+ * @Date: 2020-03-06 09:27:28
+ * @lastEditTime: Do not edit
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learn-canvas</title>
+  <style>
+    .canvas {
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 该元素可以使用CSS来定义大小，但在绘制时图像会伸缩以适应它的框架尺寸 -->
+  <!-- 如果你绘制出来的图像是扭曲的, 尝试用width和height属性为<canvas>明确规定宽高，而不是使用CSS -->
+  <!-- <canvas> 元素创造了一个固定大小的画布，它公开了一个或多个渲染上下文 -->
+  <canvas id="canvas" width="1000" height="800" class="canvas">
+    <!-- 不支持的浏览器canvas的替换内容 -->
+    current stock price: $3.15 +0.15
+  </canvas>
+  <script src="./index.js"></script>
+</body>
+
+</html>
